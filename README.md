@@ -33,6 +33,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+#### Pumpkin
+
+* Cut a hole in the bottom of the pumpkin that fits the body of the servo
+* Scoop out all the meat
+* Place some folder tissue inside the pumpkin to serve as padding for the servo
+* Slide the servo into the pumpkin so that the horn is on the outside
+  * _Note: A [wheel horn](https://www.servocity.com/146sh-standard-wheel-arm) seems to work best, but any one should do_
+
 ## Run
 
 Using defaults:
@@ -50,7 +58,7 @@ QOL_SERVO_PIN=17 \
 python ./quakeolantern.py
 ```
 
-#### Optional Environment Variables
+#### Environment Variables
 
 <dl>
 <dt>QOL_USGS_ATOM_URL</dt>
@@ -69,4 +77,5 @@ python ./quakeolantern.py
 
 ## References
 
+* USGS ATOM Syndication https://earthquake.usgs.gov/earthquakes/feed/v1.0/atom.php
 * Servo wiring based on http://razzpisampler.oreilly.com/ch05.html
