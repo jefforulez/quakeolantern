@@ -63,14 +63,13 @@ python ./quakeolantern.py
 <dl>
 <dt>QOL_USGS_ATOM_URL</dt>
 <dd>default: https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.atom</dd>
-</dl>
 
-<dl>
 <dt>QOL_USGS_CHECK_INTERVAL</dt>
 <dd>interval in seconds to check for new eartquakes, default: 60</dd>
-</dl>
 
-<dl>
+<dt>QOL_SECONDS_PER_MAGNITUDE</dt>
+<dd>number of seconds to shake per magnitude, default: 2</dd>
+
 <dt>QOL_SERVO_PIN</dt>
 <dd>gpio pin for controlling the servo, default: 18</dd>
 </dl>
