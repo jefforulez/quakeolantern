@@ -43,7 +43,10 @@ def trigger_servo ( magnitude ):
 
 	trigger_servo.pwm.start( 5 )
 
-	for second in range( 0, int( magnitude ) * SECONDS_PER_MAGNITUDE ):
+	loops = int( int( magnitude ) * SECONDS_PER_MAGNITUDE ) 
+	print "- begin movement, loops: {}".format( loops )
+
+	for second in range( 0, loops ):
 
 		trigger_servo.pwm.ChangeDutyCycle( 10 )
 		time.sleep(.2)
@@ -61,6 +64,8 @@ def trigger_servo ( magnitude ):
 		time.sleep(.2)
 
 	trigger_servo.pwm.stop()
+
+	print "- finish movement"
 
 	return
 
