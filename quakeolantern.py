@@ -35,12 +35,11 @@ def trigger_servo ( magnitude ):
 
 	print "+ trigger_servo(), magnitude: {}".format( magnitude )
 
-	if not hasattr( trigger_servo, "pwm" ):
-		print "- initializing gpio"
-		GPIO.setwarnings( False )
-		GPIO.setmode( GPIO.BCM )
-		GPIO.setup( SERVO_PIN, GPIO.OUT )
-		trigger_servo.pwm = GPIO.PWM( SERVO_PIN, 100 )
+	print "- initializing gpio"
+	GPIO.setwarnings( False )
+	GPIO.setmode( GPIO.BCM )
+	GPIO.setup( SERVO_PIN, GPIO.OUT )
+	trigger_servo.pwm = GPIO.PWM( SERVO_PIN, 100 )
 
 	trigger_servo.pwm.start( 5 )
 
@@ -49,13 +48,13 @@ def trigger_servo ( magnitude ):
 		trigger_servo.pwm.ChangeDutyCycle( 10 )
 		time.sleep(.2)
 
-		trigger_servo.pwm.ChangeDutyCycle( 15 )
-		time.sleep(.2)
-
 		trigger_servo.pwm.ChangeDutyCycle( 20 )
 		time.sleep(.2)
 
-		trigger_servo.pwm.ChangeDutyCycle( 10 )
+		trigger_servo.pwm.ChangeDutyCycle( 15 )
+		time.sleep(.2)
+
+		trigger_servo.pwm.ChangeDutyCycle( 25 )
 		time.sleep(.2)
 
 		trigger_servo.pwm.ChangeDutyCycle( 15 )
