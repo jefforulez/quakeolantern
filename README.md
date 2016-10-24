@@ -7,8 +7,8 @@ __Hack-o'-Lantern '16__
 
 Vibrate a miniture pumpkin whenever there's an earthquake somewhere in the world.
 
-Movement lasts one second for each order of magnitude of the earthquake,
-e.g. M2 lasts two seconds and M4 lasts four seconds.
+Movement lasts two seconds for each order of magnitude of the earthquake by default,
+e.g. M2 lasts four seconds and M4 lasts eight seconds. 
 
 ## Requirements
 
